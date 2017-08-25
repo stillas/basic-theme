@@ -1,3 +1,3 @@
-# Stillas
+# Stillas theme
 
-Basic theme for Hugo.
+Basic theme for (Hugo)[https://gohugo.io/] framework.

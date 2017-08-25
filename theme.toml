@@ -1,4 +1,4 @@
-description = "Starter Hugo theme for developers."
+description = "Basic theme for Hugo framework."
 features = ["blog"]
 homepage = "https://github.com/stillas/theme"
 license = "MIT"
