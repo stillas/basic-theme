@@ -1,11 +1,11 @@
-name = "stillas"
-license = "MIT"
-licenselink = "https://github.com/vimux/blank/blob/master/LICENSE.md"
 description = "Starter Hugo theme for developers."
-homepage = "https://github.com/vimux/blank/"
-tags = ["blog", "plain", "blank", "starter"]
 features = ["blog"]
+homepage = "https://github.com/stillas/theme"
+license = "MIT"
+licenselink = "https://github.com/stillas/theme/blob/development/license.md"
 min_version = 0.26
+name = "stillas"
+tags = ["empty", "theme", "blank", "starter"]
 
 [author]
   name = "marcker"
