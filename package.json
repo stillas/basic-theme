@@ -2,7 +2,9 @@
   "name": "stillas-theme",
   "version": "0.0.1",
   "description": "Basic theme for Hugo framework.",
-  "scripts": {},
+  "scripts": {
+    "watch": ""
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stillas/theme.git"
