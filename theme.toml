@@ -1,12 +1,11 @@
 description = "Basic theme for Hugo framework."
-features = ["blog"]
 homepage = "https://github.com/stillas/theme"
 license = "MIT"
 licenselink = "https://github.com/stillas/theme/blob/development/license.md"
 min_version = 0.26
 name = "stillas"
-tags = ["empty", "theme", "blank", "starter"]
+tags = ["blank", "clean", "developer", "empty", "minimal", "minimalist", "simple", "starter", "theme"]
 
 [author]
-  name = "marcker"
-  homepage = "https://github.com/marcker"
+homepage = "https://github.com/marcker"
+name = "marcker"
