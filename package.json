@@ -1,0 +1,25 @@
+{
+  "name": "stillas-theme",
+  "version": "0.0.1",
+  "description": "Basic theme for Hugo framework.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stillas/theme.git"
+  },
+  "keywords": [
+    "blank",
+    "clean",
+    "go",
+    "hugo",
+    "starter",
+    "theme",
+    "empty"
+  ],
+  "author": "Marcos Garcia de Lima <marckfree@gmail.com> (http://marcker.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stillas/theme/issues"
+  },
+  "homepage": "https://github.com/stillas/theme"
+}
