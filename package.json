@@ -5,7 +5,7 @@
     "scripts": {
         "css-lint": "node_modules/stylint/bin/stylint src/stylus/output/../ --config .stylintrc",
         "css-compile": "node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib",
-		"css": "npm run css-lint && npm run css-compile"
+        "css": "npm run css-lint && npm run css-compile"
     },
     "repository": {
         "type": "git",
