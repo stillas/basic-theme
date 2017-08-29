@@ -1,36 +1,37 @@
 {
-    "name": "stillas-theme",
-    "version": "0.0.1",
-    "description": "Basic theme for Hugo framework.",
-    "scripts": {
-        "css-lint": "node_modules/stylint/bin/stylint src/stylus/output/../ --config .stylintrc",
-        "css-compile": "rm -rf static/css && mkdir -p static/css && node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib",
-        "css-watch": "rm -rf static/css && mkdir -p static/css && node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib --watch",
-        "css": "npm run css-lint && npm run css-compile"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/stillas/theme.git"
-    },
-    "keywords": [
-        "blank",
-        "clean",
-        "go",
-        "hugo",
-        "starter",
-        "theme",
-        "empty"
-    ],
-    "author": "Marcos Garcia de Lima <marckfree@gmail.com> (http://marcker.github.io)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/stillas/theme/issues"
-    },
-    "homepage": "https://github.com/stillas/theme",
-    "devDependencies": {
-        "nib": "^1.1.2",
-        "stylint": "^1.5.9",
-        "stylus": "^0.54.5",
-        "stylus-loader": "^3.0.1"
-    }
+  "name": "stillas-theme",
+  "version": "0.0.1",
+  "description": "Basic theme for Hugo framework.",
+  "scripts": {
+    "css-lint": "node_modules/stylint/bin/stylint src/stylus/output/../ --config .stylintrc",
+    "css-compile": "rm -rf static/css && mkdir -p static/css && node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib",
+    "css-watch": "rm -rf static/css && mkdir -p static/css && node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib --watch",
+    "css": "npm run css-lint && npm run css-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stillas/theme.git"
+  },
+  "keywords": [
+    "blank",
+    "clean",
+    "go",
+    "hugo",
+    "starter",
+    "theme",
+    "empty"
+  ],
+  "author": "Marcos Garcia de Lima <marckfree@gmail.com> (http://marcker.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stillas/theme/issues"
+  },
+  "homepage": "https://github.com/stillas/theme",
+  "devDependencies": {
+    "colors.stylus": "^1.0.1",
+    "nib": "^1.1.2",
+    "stylint": "^1.5.9",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
 }
