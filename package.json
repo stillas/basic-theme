@@ -4,7 +4,8 @@
     "description": "Basic theme for Hugo framework.",
     "scripts": {
         "css-lint": "node_modules/stylint/bin/stylint src/stylus/output/../ --config .stylintrc",
-        "css-compile": "node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib",
+        "css-compile": "rm -rf static/css && mkdir -p static/css && node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib",
+        "css-watch": "rm -rf static/css && mkdir -p static/css && node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib --watch",
         "css": "npm run css-lint && npm run css-compile"
     },
     "repository": {
