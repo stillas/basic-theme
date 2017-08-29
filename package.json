@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/stillas/theme/issues"
   },
-  "homepage": "https://github.com/stillas/theme"
+  "homepage": "https://github.com/stillas/theme",
+  "devDependencies": {
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
 }
