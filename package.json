@@ -8,9 +8,10 @@
     "css-watch": "rm -rf static/css && mkdir -p static/css && node_modules/stylus/bin/stylus --sourcemap --compress src/stylus/output --out static/css --use ./node_modules/nib/lib/nib --watch",
     "css": "npm run css-lint && npm run css-compile",
     "js-lint": "node_modules/eslint/bin/eslint.js src/js/app/**/",
-    "js-compile": "rm -rf static/js && mkdir -p static/js && node_modules/babel-cli/bin/babel.js src/js/app/**/* -o static/js/main.js && NODE_ENV=$ENV node_modules/browserify/bin/cmd.js -g envify -e static/js/main.js -o static/js/main.js && node_modules/uglify-js/bin/uglifyjs static/js/main.js -c -o static/js/main.min.js",
-    "js-watch": "",
-    "js": "npm run js-lint && npm run js-compile"
+    "js-compile": "rm -rf static/js && mkdir -p static/js && node_modules/babel-cli/bin/babel.js src/js/app/**/* -o static/js/bundle.js && NODE_ENV=$ENV node_modules/browserify/bin/cmd.js -g envify -e static/js/bundle.js -o static/js/bundle.js && node_modules/uglify-js/bin/uglifyjs static/js/bundle.js -c -o static/js/bundle.js",
+    "js-watch": "node_modules/watch-cli/bin/watch  -p src/js/app/**/* -c 'rm -rf static/js && mkdir -p static/js && node_modules/babel-cli/bin/babel.js src/js/app/**/* -o static/js/bundle.js && NODE_ENV=development node_modules/browserify/bin/cmd.js -g envify -e static/js/bundle.js -o static/js/bundle.js'",
+    "js": "npm run js-lint && npm run js-compile",
+    "watch": "npm run css-watch & npm run js-watch"
   },
   "repository": {
     "type": "git",
@@ -41,8 +42,8 @@
     "nib": "^1.1.2",
     "stylint": "^1.5.9",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
     "uglify-js": "^3.0.28",
-    "vue": "^2.4.3"
+    "vue": "^2.4.3",
+    "watch-cli": "^0.2.2"
   }
 }
